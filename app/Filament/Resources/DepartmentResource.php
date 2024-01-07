@@ -26,6 +26,7 @@ class DepartmentResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('name')
                     ->required()
+                    ->unique()
                     ->maxLength(255),
             ]);
     }
